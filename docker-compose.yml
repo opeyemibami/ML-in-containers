@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+
+  tensorflow:
+    image: jupyter/tensorflow-notebook
+    ports:
+      - "8888:8888"
+    volumes:
+      - "./notebooks:/home/jovyan/projectDir"
+    environment:
+      - "JUPYTER_ENABLE_LAB=yes"
+
+  tf_model_serving:
+    image: tf_serving:classifier_model
+    build:
+      context: .
+      dockerfile: Dockerfile
+    deploy:
+      replicas: 4
+      endpoint_mode: vip
