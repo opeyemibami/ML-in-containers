@@ -20,9 +20,12 @@ run this command in your terminal
 ### After custom image has been built, with docker swarm, we can start up the services listed in the docker compose file using the commands below in terminal: 
 - ``` docker swarm init ```
 -  ``` docker stack deploy -c docker-compose.yml tf ```
+
 With this, docker will create a virtual network which allows all containers to communicate with each other by name.
 
 ### To check the logs each containers, we can run the command below which is a general format of docker service logs <any of the service names created above>
 - Tensorflow serving:  ``` docker service logs tf_tf_model_serving ``` 
 - Jupyter notebook: ``` docker service logs tf_tensorflow ```
+
 With the jupyter logs, you can copy the web url to access the serving notebook and run the predict function to send requests to the server. 
+
