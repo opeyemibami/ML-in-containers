@@ -2,6 +2,7 @@
 This project utilizes docker for machine learning experimentation, research and deployment as microservice. 
 You can use docker swarm or kubernetes to orchestrate the sercives declared in the docker compose file
 ## Model architecture 
+![Model architecture](architecture.png)
 
 
 #### Steps to get the app running: 
