@@ -2,8 +2,7 @@
 This project utilizes docker for machine learning experimentation, research and deployment as microservice. 
 You can use docker swarm or kubernetes to orchestrate the sercives declared in the docker compose file
 ## Model architecture 
-<!-- <img src="img\Architecture.png" class="img-responsive" alt=""> </div> -->
-<img src="img\topic_model.jpg" class="img-responsive" alt=""> </div>
+<img src="img\Architecture.jpg" class="img-responsive" alt=""> </div>
 
 #### Steps to get the app running: 
 - clone the repository ```git clone https://github.com/opeyemibami/ML-in-containers.git ```
