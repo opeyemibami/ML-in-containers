@@ -28,3 +28,4 @@ With this, docker will create a virtual network which allows all containers to c
 
 With the jupyter logs, you can copy the web url to access the serving notebook and run the predict function to send requests to the server. 
 
+## Read a well detailed project article published with [neptune.ai](https://neptune.ai/blog/data-science-machine-learning-in-containers)
